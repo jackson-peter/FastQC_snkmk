@@ -1,10 +1,10 @@
 # Snakefile for FastQC and MultiQC analysis - Paired-end reads
 
-# Configuration
-FASTQ_DIR = "fastq"  # Directory containing your .fq.gz or .fastq.gz files
-FASTQC_DIR = "fastqc_results"
-MULTIQC_DIR = "multiqc_results"
+configfile: "config/config.yaml"
 
+FASTQ_DIR = config["fastq_dir"]
+FASTQC_DIR = config.get("fastqc_dir", "fastqc_results")
+MULTIQC_DIR = config.get("multiqc_dir", "multiqc_results")
 # Get all fastq.gz files and extract sample names
 # Assumes naming convention: sample_R1.fq.gz and sample_R2.fq.gz
 # Or: sample_1.fq.gz and sample_2.fq.gz

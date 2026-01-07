@@ -1,4 +1,3 @@
-fastq_dir: "data/raw_reads"
-fastqc_dir: "results/fastqc"
-multiqc_dir: "results/multiqc"
-
+fastq_dir: "/maps/projects/renlab/people/qgr178/Projects/AGO1/Data"
+fastqc_dir: "/maps/projects/renlab/people/qgr178/Projects/AGO1/fastqc"
+multiqc_dir: "/maps/projects/renlab/people/qgr178/Projects/AGO1/multiqc"
