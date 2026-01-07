@@ -1,0 +1,4 @@
+fastq_dir: "data/raw_reads"
+fastqc_dir: "results/fastqc"
+multiqc_dir: "results/multiqc"
+
