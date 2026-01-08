@@ -1,0 +1,1 @@
+make multiqc rule work for all files (remove extension check)
